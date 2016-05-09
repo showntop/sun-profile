@@ -1,0 +1,8 @@
+zh-ch:
+  login_name: "登录名:"
+  name: "昵称:"
+  email: "邮箱:"
+  sex: "性别:"
+  male: "男:"
+  female: "女:"
+  click_and_up: "点击上传图片"

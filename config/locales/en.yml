@@ -21,3 +21,11 @@
 
 en:
   hello: "Hello world"
+  login_name: "Login name:"
+  name: "name:"
+  email: "email:"
+  sex: "SEX"
+  male: "male"
+  female: "female"
+  user_img: "user image:"
+  click_and_up: "click and upload image"
