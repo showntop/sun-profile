@@ -1,0 +1,31 @@
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p><%= t(".name")%><input type="text" name="name"></input></p>
+  <p><%= t(".login_name")%> <input type="text" name="login_name" /></p>
+  <p><%= t(".email")%> <input type="text" name="email" /></p>
+  <p><%= t(".sex")%> 
+    <input type="radio" name="sex"><%=t(".male")%> </input>
+    <input type="radio" name="sex"><%= t(".female")%></input>
+  </p>
+  <p>
+    <div>
+      <%= t(".user_img")%>&nbsp;&nbsp;<%= t(".click_and_up")%>
+      <img class="img j-img" src="../images/xx.jpg" style="width: 20px;height: 20px">
+    </div>
+  </p>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

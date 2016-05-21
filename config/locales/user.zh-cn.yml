@@ -1,0 +1,10 @@
+zh-cn:
+  user:
+    show:
+      login_name: "登录名:"
+      name: "昵称:"
+      email: "邮箱:"
+      sex: "性别:"
+      male: "男:"
+      female: "女:"
+      user_img: "头像:"
