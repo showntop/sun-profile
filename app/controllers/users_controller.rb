@@ -1,3 +1,4 @@
+require 'resque'
 class UsersController < ApplicationController
   #before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
   def show
     session[:user_id] = 1
     @user = get_current_user
+    Resque.enqueue(TestResque,1,'')
     render :new if @user.nil?
   end
 
